@@ -1,0 +1,12 @@
+/Users/gps/Developer/movies-api/GettingStarted/Movies.Application/bin/Debug/net7.0/Movies.Application.deps.json
+/Users/gps/Developer/movies-api/GettingStarted/Movies.Application/bin/Debug/net7.0/Movies.Application.dll
+/Users/gps/Developer/movies-api/GettingStarted/Movies.Application/bin/Debug/net7.0/Movies.Application.pdb
+/Users/gps/Developer/movies-api/GettingStarted/Movies.Application/obj/Debug/net7.0/Movies.Application.csproj.AssemblyReference.cache
+/Users/gps/Developer/movies-api/GettingStarted/Movies.Application/obj/Debug/net7.0/Movies.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gps/Developer/movies-api/GettingStarted/Movies.Application/obj/Debug/net7.0/Movies.Application.AssemblyInfoInputs.cache
+/Users/gps/Developer/movies-api/GettingStarted/Movies.Application/obj/Debug/net7.0/Movies.Application.AssemblyInfo.cs
+/Users/gps/Developer/movies-api/GettingStarted/Movies.Application/obj/Debug/net7.0/Movies.Application.csproj.CoreCompileInputs.cache
+/Users/gps/Developer/movies-api/GettingStarted/Movies.Application/obj/Debug/net7.0/Movies.Application.dll
+/Users/gps/Developer/movies-api/GettingStarted/Movies.Application/obj/Debug/net7.0/refint/Movies.Application.dll
+/Users/gps/Developer/movies-api/GettingStarted/Movies.Application/obj/Debug/net7.0/Movies.Application.pdb
+/Users/gps/Developer/movies-api/GettingStarted/Movies.Application/obj/Debug/net7.0/ref/Movies.Application.dll

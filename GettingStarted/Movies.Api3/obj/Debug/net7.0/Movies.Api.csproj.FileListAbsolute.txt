@@ -1,0 +1,7 @@
+/Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/obj/Debug/net7.0/Movies.Api.csproj.AssemblyReference.cache
+/Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/obj/Debug/net7.0/Movies.Api.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/obj/Debug/net7.0/Movies.Api.AssemblyInfoInputs.cache
+/Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/obj/Debug/net7.0/Movies.Api.AssemblyInfo.cs
+/Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/obj/Debug/net7.0/Movies.Api.csproj.CoreCompileInputs.cache
+/Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/obj/Debug/net7.0/Movies.Api.MvcApplicationPartsAssemblyInfo.cs
+/Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/obj/Debug/net7.0/Movies.Api.MvcApplicationPartsAssemblyInfo.cache
