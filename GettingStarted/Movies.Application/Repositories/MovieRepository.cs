@@ -20,6 +20,12 @@ namespace Movies.Application.Repositories
             return Task.FromResult(movieRemoved);
         }
 
+        public Task<Movie?> GetBySlugAsync(string slug)
+        {
+            var movie = _movies.SingleOrDefault(x => x.Slug == slug);
+            return Task.FromResult(movie);
+        }
+
         public Task<IEnumerable<Movie>> GetAllAsync()
         {
             return Task.FromResult(_movies.AsEnumerable());

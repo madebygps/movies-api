@@ -1,10 +1,3 @@
-/Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/obj/Debug/net7.0/Movies.Api.csproj.AssemblyReference.cache
-/Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/obj/Debug/net7.0/Movies.Api.GeneratedMSBuildEditorConfig.editorconfig
-/Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/obj/Debug/net7.0/Movies.Api.AssemblyInfoInputs.cache
-/Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/obj/Debug/net7.0/Movies.Api.AssemblyInfo.cs
-/Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/obj/Debug/net7.0/Movies.Api.csproj.CoreCompileInputs.cache
-/Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/obj/Debug/net7.0/Movies.Api.MvcApplicationPartsAssemblyInfo.cs
-/Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/obj/Debug/net7.0/Movies.Api.MvcApplicationPartsAssemblyInfo.cache
 /Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/bin/Debug/net7.0/appsettings.Development.json
 /Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/bin/Debug/net7.0/appsettings.json
 /Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/bin/Debug/net7.0/Movies.Api
@@ -21,6 +14,13 @@
 /Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/bin/Debug/net7.0/Movies.Contracts.dll
 /Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/bin/Debug/net7.0/Movies.Application.pdb
 /Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/bin/Debug/net7.0/Movies.Contracts.pdb
+/Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/obj/Debug/net7.0/Movies.Api.csproj.AssemblyReference.cache
+/Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/obj/Debug/net7.0/Movies.Api.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/obj/Debug/net7.0/Movies.Api.AssemblyInfoInputs.cache
+/Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/obj/Debug/net7.0/Movies.Api.AssemblyInfo.cs
+/Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/obj/Debug/net7.0/Movies.Api.csproj.CoreCompileInputs.cache
+/Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/obj/Debug/net7.0/Movies.Api.MvcApplicationPartsAssemblyInfo.cs
+/Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/obj/Debug/net7.0/Movies.Api.MvcApplicationPartsAssemblyInfo.cache
 /Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/obj/Debug/net7.0/staticwebassets/msbuild.Movies.Api.Microsoft.AspNetCore.StaticWebAssets.props
 /Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/obj/Debug/net7.0/staticwebassets/msbuild.build.Movies.Api.props
 /Users/gps/Developer/movies-api/GettingStarted/Movies.Api3/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.Movies.Api.props
