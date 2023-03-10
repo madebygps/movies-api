@@ -38,7 +38,7 @@ namespace Movies.Application.Repositories
             return result > 0;
         }
 
-        public async Task<bool> UpdateAsync(Movie movie, CancellationToken cancellationToken = default)
+        public async Task<bool> UpdateAsync(Movie movie, CancellationToken cancellationToken = default, Guid? userid = default)
         {
             using var connection = await _dbConnectionFactory.CreateConnectionAsync(cancellationToken);
             using var transaction = connection.BeginTransaction();
@@ -61,6 +61,8 @@ namespace Movies.Application.Repositories
             transaction.Commit();
             return result > 0;
         }
+
+       
 
         public async Task<bool> DeleteByIdAsync(Guid id, CancellationToken cancellationToken = default)
         {
@@ -87,7 +89,7 @@ delete from movies where id = @id
             """, new { id }, cancellationToken: cancellationToken));
         }
 
-        public async Task<Movie?> GetBySlugAsync(string slug, CancellationToken cancellationToken = default)
+        public async Task<Movie?> GetBySlugAsync(string slug, Guid? userid = default, CancellationToken cancellationToken = default)
         {
             using var connection = await _dbConnectionFactory.CreateConnectionAsync(cancellationToken);
             var movie = await connection.QuerySingleOrDefaultAsync<Movie>(
@@ -111,7 +113,7 @@ select name from genres where movieid = @id
             return movie;
         }
 
-        public async Task<IEnumerable<Movie>> GetAllAsync(CancellationToken cancellationToken = default)
+        public async Task<IEnumerable<Movie>> GetAllAsync(Guid? userid = default, CancellationToken cancellationToken = default)
         {
             using var connection = await _dbConnectionFactory.CreateConnectionAsync(cancellationToken);
             var result = await connection.QueryAsync(new CommandDefinition("""
@@ -129,7 +131,8 @@ select name from genres where movieid = @id
             });
         }
 
-        public async Task<Movie?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default)
+        public async Task<Movie?> GetByIdAsync(Guid id,  Guid? userid = default, CancellationToken cancellationToken = default
+           )
         {
             using var connection = await _dbConnectionFactory.CreateConnectionAsync(cancellationToken);
             var movie = await connection.QuerySingleOrDefaultAsync<Movie>(
