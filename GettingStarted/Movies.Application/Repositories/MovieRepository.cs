@@ -94,8 +94,14 @@ delete from movies where id = @id
             using var connection = await _dbConnectionFactory.CreateConnectionAsync(cancellationToken);
             var movie = await connection.QuerySingleOrDefaultAsync<Movie>(
                 new CommandDefinition("""
-                select * from movies where slug = @slug
-                """, new { slug }, cancellationToken: cancellationToken));
+                select m.*, round(avg(r.rating), 1) as rating, myr.rating as userrating
+                from movies m
+                left join ratings r on m.id = r.movieid
+                left join ratings myr on m.id = myr.movieid
+                    and myr.userid = @userId
+                where slug = @slug
+                group by id, userrating
+                """, new { slug, userid }, cancellationToken: cancellationToken));
             if (movie is null)
             {
                 return null;
@@ -137,8 +143,14 @@ select name from genres where movieid = @id
             using var connection = await _dbConnectionFactory.CreateConnectionAsync(cancellationToken);
             var movie = await connection.QuerySingleOrDefaultAsync<Movie>(
                 new CommandDefinition("""
-                select * from movies where id = @id
-                """, new { id }, cancellationToken: cancellationToken));
+                select m.*, round(avg(r.rating), 1) as rating, myr.rating as userrating
+                from movies m
+                left join ratings r on m.id = r.movieid
+                left join ratings myr on m.id = myr.movieid
+                    and myr.userid = @userId
+                where id = @id
+                group by id, userrating
+                """, new { id, userid }, cancellationToken: cancellationToken));
             if (movie is null)
             {
                 return null;
