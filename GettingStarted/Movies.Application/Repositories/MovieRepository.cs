@@ -61,9 +61,7 @@ namespace Movies.Application.Repositories
             transaction.Commit();
             return result > 0;
         }
-
-       
-
+        
         public async Task<bool> DeleteByIdAsync(Guid id, CancellationToken cancellationToken = default)
         {
             using var connection = await _dbConnectionFactory.CreateConnectionAsync(cancellationToken);
@@ -123,8 +121,14 @@ select name from genres where movieid = @id
         {
             using var connection = await _dbConnectionFactory.CreateConnectionAsync(cancellationToken);
             var result = await connection.QueryAsync(new CommandDefinition("""
-                select m.*, string_agg(g.name, ',') as genres
-                from movies m left join genres g on m.id = g.movieId
+                select m.*, 
+                       string_agg(distinct g.name, ',') as genres,
+                       round(avg(r.ratings), 1) as rating,
+                       myr.rating as userrating
+                from movies m 
+                    left join genres g on m.id = g.movieId
+                    left join ratings r on m.id = r.movieId
+                    left join ratings myr on m.id = myr.movieId
                 group by id
                 """, cancellationToken: cancellationToken));
 
@@ -133,6 +137,8 @@ select name from genres where movieid = @id
                 Id = x.id,
                 Title = x.title,
                 YearOfRelease = x.yearofrelease,
+                Rating = (float?)x.rating,
+                UserRating = (int?)x.userrating,
                 Genres = Enumerable.ToList(x.genres.Split(','))
             });
         }
